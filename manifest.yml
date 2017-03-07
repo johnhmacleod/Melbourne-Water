@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Melbourne Water
+  host: Melbourne-Water
+  disk_quota: 1024M
+  services:
+  - Melbourne Water-cloudantNoSQLDB
+  - Melbourne Water-iotf-service
+  - availability-monitoring-auto
+  env:
+    redacted_message: '[PRIVATE DATA HIDDEN]'
